@@ -40,7 +40,7 @@ class FiboBotApp:
             
             # Charger les secrets
             token = Secrets.get_telegram_token()
-            api_key = Secrets.get_twelvedata_key()
+            api_key = Secrets.get_twelvedata_api_key()
             logger.info("✅ Secrets chargés")
             
             # Initialiser les clients
