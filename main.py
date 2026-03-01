@@ -5,10 +5,8 @@ import sys
 import os
 from threading import Thread
 from flask import Flask
-from telegram.ext import Application, CommandHandler, ContextTypes
-from telegram import Update
+from telegram.ext import Application, CommandHandler
 from config.secrets import Secrets
-from config.settings import PAIRS
 from data.twelvedata_client import TwelveDataClient
 from data.database import Database
 from bot.handlers import CommandHandlers
